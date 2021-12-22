@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href= "page_style.css" type="text/css"  />
+<head>
+<title>PIKPO</title>
+</head>
+<body>
+    <div class="hello">
+        <p>Тут вы можете оставить контакты, чтобы мы с вами связались</p>
+    </div>
+
+    <div class="input_contact">
+        <form action="{{ url_for('get_contact') }}" method="POST">
+            <input id="input_name" type="text" name="contact_name" placeholder="Введите своё имя">
+            <input id="input_mail" type="text" name="contact_mail" placeholder="Введите свою почту">
+            <input id="button_contact" type="submit" value="Отправить">
+        </form>
+    </div>
+
+    <div>
+        <form action="/" target="_self">
+            <button class="back_button">Назад на главную</button>
+        </form>
+    </div>
+</body>
+</html>
